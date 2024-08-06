@@ -1,9 +1,5 @@
-version: 0.0
-os: linux
-files:
-  - source: /frontend
-    destination: /var/www/html
-hooks:
-  AfterInstall:
-    - location: scripts/deploy-frontend.sh
-      timeout: 300
+#!/bin/bash
+cd /home/ubuntu/frontend
+docker stop frontend || true
+docker rm frontend || true
+docker run -d -p 3000:3000 --name frontend frontend-image
