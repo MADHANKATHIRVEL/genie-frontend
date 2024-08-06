@@ -7,8 +7,9 @@ phases:
   build:
     commands:
       - docker build -t frontend-image .
+
 artifacts:
-  files:
-    - '**/*'
-  discard-paths: yes
-  base-directory: build
+  files: 
+    - '**/*'              # Includes all files and subdirectories from the root directory
+    - 'appspec.yml'       # Includes the appspec.yml file
+    - 'scripts/**'  
