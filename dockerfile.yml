@@ -30,7 +30,7 @@ COPY --from=build /app/build ./build
 RUN npm install --only=production
 
 # Specify the command to run your application (if applicable)
- CMD ["npm", "start"]
+# CMD ["npm", "start"]
 
 # Expose the port the app runs on (if applicable)
- EXPOSE 3000
+# EXPOSE 3000
