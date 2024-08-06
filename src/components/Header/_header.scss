@@ -1,0 +1,54 @@
+@import "./../../helpers/global.scss";
+.header {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 99;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .sidebar-head {
+    // width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .side-left {
+      width: 150px;
+      height: 100px;
+      img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+      button {
+        margin: 0;
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+  }
+  .logout-cont {
+    color: $primary;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+    svg{
+      padding-top: 2px;
+    }
+    &:hover{
+      svg{
+        transform: translateX(10px);
+      }
+    }
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}

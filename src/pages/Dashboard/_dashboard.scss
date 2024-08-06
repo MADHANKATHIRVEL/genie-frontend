@@ -1,0 +1,40 @@
+@import "./../../helpers/_global.scss";
+
+.dashboard {
+  display: flex;
+  // align-items: flex-end;
+  // justify-content: flex-end;
+  margin-top: 80px;
+  padding: 2%;
+  flex-direction: column;
+  gap: 10px;
+  .main-cards {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 2%;
+    width: 100%;
+  }
+  .card-avatar {
+    display: flex;
+    align-items: center;
+  }
+  .progress-cont {
+    margin-bottom: 10px;
+  }
+  .ant-card-meta-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: #fff;
+  }
+}

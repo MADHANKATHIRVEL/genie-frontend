@@ -1,0 +1,27 @@
+@import "./../../helpers/_global.scss";
+$bg: #001529;
+
+.sidebar {
+  height: calc(100vh - 75px);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  // margin-top: 0 !important;
+  .ant-menu {
+    height: 100%;
+    // width: fit-content;
+    background-color: $bg;
+    // border: 1px solid;
+  }
+  .ant-menu-item {
+    gap: 20px;
+  }
+  .ant-menu-title-content {
+    width: 7vw;
+
+    text-align: left;
+  }
+}
+
+

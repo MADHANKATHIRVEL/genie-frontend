@@ -1,0 +1,68 @@
+@import "./../../../helpers/global";
+
+.order-detail {
+  margin-top: 80px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    margin: 0;
+    font-size: x-large;
+  }
+  .total {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    .ant-descriptions-view {
+      border-radius: 2px !important;
+    }
+  }
+  .desc-row {
+    width: 100%;
+    display: flex;
+    // justify-content: flex-end;
+    gap: 10px;
+    .ant-descriptions-item-label,
+    .ant-descriptions-item-content {
+      padding: 6px 24px !important;
+    }
+    .desc,
+    .address {
+      width: 50%;
+      .ant-descriptions-view {
+        border-radius: 2px !important;
+      }
+    }
+    .status-div {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+  .product-row {
+    display: flex;
+    align-items: center;
+    .image-cont {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p,
+    h3,
+    h5 {
+      margin: 0;
+    }
+  }
+}

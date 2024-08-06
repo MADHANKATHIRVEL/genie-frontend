@@ -1,0 +1,66 @@
+@import "./../../helpers/global.scss";
+
+.login {
+  //   border: 1px solid;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 0;
+    width: 500px;
+    height: 300px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .logo-section {
+      width: 200px;
+      height: 75px;
+      object-fit: contain;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .ant-card-body {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      padding: 5% 10%;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
+      button {
+        width: 50%;
+      }
+      .ant-input-outlined {
+        background-color: transparent;
+        color: #fff;
+        height: 40px;
+        &:hover,
+        &:focus,
+        &:focus-within {
+          background-color: transparent;
+        }
+      }
+      button {
+        border: none;
+        background-color: $primary;
+        color: #fff;
+        &:hover {
+          background-color: $primary;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
