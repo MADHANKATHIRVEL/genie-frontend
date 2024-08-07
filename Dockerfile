@@ -33,4 +33,4 @@ RUN npm install --only=production
 # CMD ["npm", "start"]
 
 # Expose the port the app runs on (if applicable)
-# EXPOSE 3000
+EXPOSE 3000
